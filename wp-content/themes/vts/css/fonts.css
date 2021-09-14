@@ -1,0 +1,24 @@
+/* IMPORTS */
+
+@font-face {
+    font-family: 'Jaapokki';
+    src: url('../fonts/jaapokki-regular.eot');
+    src: url('../fonts/jaapokki-regular.eot') format('embedded-opentype'),
+         url('../fonts/jaapokki-regular.woff') format('woff'),
+         url('../fonts/jaapokki-regular.ttf') format('truetype'),
+         url('../fonts/jaapokki-regular.svg#JaapokkiRegular') format('svg');
+}
+
+
+
+/* HELPERS CLASS */
+
+.font-barlow {
+    font-family: 'Barlow', sans-serif;
+}
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+.font-jaapokki {
+    font-family: "Jaapokki";
+}

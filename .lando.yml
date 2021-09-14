@@ -1,0 +1,4 @@
+name: terressecretes
+recipe: wordpress
+config:
+  webroot: .
