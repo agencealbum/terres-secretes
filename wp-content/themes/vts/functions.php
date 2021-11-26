@@ -25,8 +25,7 @@
 
 	    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/css/custom.css', array( $parent_style, 'understrap-styles' ),'v2b');
 	    wp_enqueue_style( 'revelis-style', get_stylesheet_directory_uri() . '/css/revelis.css', array( $parent_style, 'understrap-styles' ), 1.0);
-
-
+	    wp_enqueue_style( 'cerco-style', get_stylesheet_directory_uri() . '/css/cerco.css', array( $parent_style, 'understrap-styles' ), 1.0);
 	}
 
 	// Menu Hamburger

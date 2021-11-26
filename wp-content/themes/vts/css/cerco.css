@@ -1,0 +1,683 @@
+.vts__cerco__boutique {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1199.98px) {
+    .vts__cerco__boutique {
+        background: no-repeat 10rem 0 url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background-size: cover;
+    }
+
+    .vts__cerco__boutique__content {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vts__cerco__boutique {
+        background: no-repeat 20rem 0 url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background-size: cover;
+    }
+
+    .vts__cerco__boutique__content {
+        margin-left: 15rem;
+    }
+}
+
+.vts__cerco__boutique__content {
+    max-width: 30rem;
+    position: relative;
+}
+
+.vts__cerco__boutique__text {
+    font-family: 'SF Pro', serif;
+    color: #FFFFFF;
+    text-transform: none;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+
+.vts__cerco__boutique__cerco-logo {
+    position: absolute;
+    top: -250px;
+}
+
+.vts__cerco__boutique__socials i {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.vts__cerco {
+    background-image: url("../img/cerco/texture/texture2.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    font-family: 'SF Pro', serif;
+    margin-bottom: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+.vts__cerco__video__container {
+    height: auto;
+    width: 100%;
+}
+
+.vts__cerco__video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vts__cerco__section {
+    min-height: 100vh;
+}
+
+.vts__cerco__section__title {
+    text-transform: none;
+    border: none;
+    font-family: 'SF Pro', serif;
+    color: #505050;
+    font-size: 3.75rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.vts__cerco__section__text {
+    text-transform: none;
+    font-family: 'SF Pro', serif;
+    color: #505050;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.vts__cerco__section--dark {
+    position: relative;
+}
+
+.vts__cerco__section--dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: 3;
+    background: #000000;
+}
+
+.vts__cerco__section--light__image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vts__cerco__section--light__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vts__cerco__section--dark__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+
+.vts__cerco__section--light__text__content {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+@media (min-width: 992px) {
+    .vts__cerco__section--light__text__content {
+        min-height: 35rem;
+    }
+}
+
+@media (max-width: 767.99px) {
+    .vts__cerco__section--light__text__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .vts__cerco__section--dark__text__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .vts__cerco__section--light__text__content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .vts__cerco__section--dark__text__content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vts__cerco__section--light__text__content {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .vts__cerco__section--dark__text__content {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+.vts__cerco__section--dark__text__content {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.vts__cerco__section--1__image {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 767.98px) {
+    .vts__cerco__section--1__image img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .vts__cerco__section--1__image img {
+        width: auto;
+        height: 35rem;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vts__cerco__section--1__image {
+        justify-content: center;
+    }
+
+    .vts__cerco__section--1__image img {
+        margin-bottom: 5.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .vts__cerco__section--1__image {
+        justify-content: flex-start;
+    }
+
+    .vts__cerco__section--1__image img {
+        margin-top: 5.5rem;
+        margin-bottom: 5.5rem;
+        margin-right: 8rem;
+    }
+}
+
+
+.vts__cerco__section--dark__image {
+    position: relative;
+    z-index: 5;
+}
+
+
+@media (max-width: 991.98px) {
+    .vts__cerco__section__image img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .vts__cerco__section__image img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.vts__cerco__section__parlent {
+    border: 1px solid #505050;
+    border-radius: 100px;
+    color: #505050;
+    background-color: rgba(0, 0, 0, 0);
+    padding: .2rem .5rem;
+    margin-top: 2rem;
+}
+
+.vts__cerco__section__parlent:hover {
+    background: #505050;
+    color: #FFFFFF;
+}
+
+.vts__cerco__section__parlent i {
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .vts__cerco__section__game-bio-engagee {
+        /*height: 500rem;*/
+    }
+
+    .vts__cerco__section__game-bio-engagee__container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        z-index: 5;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .vts__cerco__section__game-bio-engagee__title {
+        padding-top: 6rem;
+        margin-bottom: 45rem;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle {
+        position: absolute;
+        top: 330px;
+        height: 550px;
+        left: 50%;
+        margin-left: -88px
+    }
+
+    /* Bottles Desc */
+    .vts__cerco__section__game-bio-engagee__bottle_desc {
+        font-size: 1.25rem;
+        color: #505050;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /* Line bottle */
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouteille,
+    .vts__cerco__section__game-bio-engagee__bottle_line__etiquette,
+    .vts__cerco__section__game-bio-engagee__bottle_line__capsule,
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon1 {
+        margin-bottom: 1rem;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2 {
+        display: none;
+    }
+
+
+    /* Bottle icons */
+    .vts__cerco__section__game-bio-engagee__bottle_icon {
+        height: 100px;
+    }
+
+    /* Carton */
+    .vts__cerco__section__game-bio-engagee__carton {
+        width: 100%;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    .vts__cerco__section__game-bio-engagee__carton__text {
+        width: 100%;
+        font-size: 1.25rem;
+        color: #505050;
+        padding-bottom: 6rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .vts__cerco__section__game-bio-engagee {
+        height: 115rem;
+    }
+
+    .vts__cerco__section__game-bio-engagee__container {
+        position: relative;
+        width: 768px;
+        margin: auto;
+        z-index: 5;
+    }
+
+    .vts__cerco__section__game-bio-engagee__title {
+        position: absolute;
+        top: 7rem;
+        left: 199px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle {
+        position: absolute;
+        top: 320px;
+        left: 256px;
+        height: 800px;
+    }
+
+
+    /* Bottles Desc */
+    .vts__cerco__section__game-bio-engagee__bottle_desc {
+        max-width: 12rem;
+        position: absolute;
+        font-size: 1.25rem;
+        color: #505050;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__bouteille {
+        top: 690px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__etiquette {
+        top: 970px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__capsule {
+        top: 420px;
+        right: 70px;
+        text-align: right;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__bouchon {
+        top: 673px;
+        right: 70px;
+        text-align: right;
+    }
+
+    /* Line bottle */
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouteille {
+        position: absolute;
+        width: 300px;
+        border-top: 1px solid white;
+        top: 680px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__etiquette {
+        position: absolute;
+        width: 300px;
+        border-top: 1px solid white;
+        top: 960px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__capsule {
+        position: absolute;
+        width: 305px;
+        border-top: 1px solid white;
+        top: 410px;
+        right: 70px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon1 {
+        position: absolute;
+        width: 181px;
+        border-top: 1px solid white;
+        top: 663px;
+        right: 70px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2 {
+        position: absolute;
+        width: 150px;
+        border-top: 1px solid white;
+        top: 610px;
+        right: 229px;
+        transform: rotate(45deg);
+    }
+
+    /* Bottle icons */
+    .vts__cerco__section__game-bio-engagee__bottle_icon {
+        position: absolute;
+        height: 100px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+        top: 590px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
+        top: 870px;
+        left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette2 {
+        top: 870px;
+        left: 122px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette3 {
+        top: 870px;
+        left: 199px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__capsule {
+        top: 320px;
+        right: 70px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouchon {
+        top: 570px;
+        right: 70px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton1 {
+        top: 1550px;
+        right: 439px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton2 {
+        top: 1550px;
+        right: 345px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton3 {
+        top: 1550px;
+        right: 252px;
+    }
+
+    /* Carton */
+    .vts__cerco__section__game-bio-engagee__carton {
+        position: absolute;
+        width: 16.5rem;
+        top: 1300px;
+        right: 252px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__carton__text {
+        position: absolute;
+        width: 16.5rem;
+        top: 1660px;
+        right: 252px;
+        font-size: 1.25rem;
+        color: #505050;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .vts__cerco__section__game-bio-engagee {
+        height: 60rem;
+    }
+
+    .vts__cerco__section__game-bio-engagee__container {
+        position: relative;
+        width: 1200px;
+        margin: auto;
+        z-index: 5;
+    }
+
+    .vts__cerco__section__game-bio-engagee__title {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle {
+        position: absolute;
+        top: 80px;
+        left: 384px;
+        height: 800px;
+    }
+
+    /* Bottles Desc */
+    .vts__cerco__section__game-bio-engagee__bottle_desc {
+        max-width: 12rem;
+        position: absolute;
+        font-size: 1.25rem;
+        color: #505050;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__bouteille {
+        top: 420px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__etiquette {
+        top: 700px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__capsule {
+        top: 150px;
+        right: 370px;
+        text-align: right;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__bouchon {
+        top: 403px;
+        right: 370px;
+        text-align: right;
+    }
+
+    /* Line bottle */
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouteille {
+        position: absolute;
+        width: 300px;
+        border-top: 1px solid white;
+        top: 410px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__etiquette {
+        position: absolute;
+        width: 300px;
+        border-top: 1px solid white;
+        top: 690px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__capsule {
+        position: absolute;
+        width: 305px;
+        border-top: 1px solid white;
+        top: 140px;
+        right: 370px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon1 {
+        position: absolute;
+        width: 207px;
+        border-top: 1px solid white;
+        top: 393px;
+        right: 370px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2 {
+        position: absolute;
+        width: 150px;
+        border-top: 1px solid white;
+        top: 340px;
+        right: 555px;
+        transform: rotate(45deg);
+    }
+
+    /* Bottle icons */
+    .vts__cerco__section__game-bio-engagee__bottle_icon {
+        position: absolute;
+        height: 100px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+        top: 320px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
+        top: 600px;
+        left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette2 {
+        top: 600px;
+        left: 242px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette3 {
+        top: 600px;
+        left: 319px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__capsule {
+        top: 50px;
+        right: 370px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouchon {
+        top: 300px;
+        right: 370px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton1 {
+        top: 380px;
+        right: 187px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton2 {
+        top: 380px;
+        right: 93.5px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__carton3 {
+        top: 380px;
+        right: 0;
+    }
+
+    /* Carton */
+    .vts__cerco__section__game-bio-engagee__carton {
+        position: absolute;
+        width: 16.5rem;
+        top: 130px;
+        right: 0;
+    }
+
+    .vts__cerco__section__game-bio-engagee__carton__text {
+        position: absolute;
+        width: 16.5rem;
+        top: 485px;
+        right: 0;
+        font-size: 1.25rem;
+        color: #505050;
+    }
+
+}
