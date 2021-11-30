@@ -10,7 +10,7 @@
 
 @media (max-width: 767.98px) {
     .vts__cerco__boutique {
-        background: no-repeat center bottom url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background: no-repeat center bottom url("../img/cerco/cerco-gamme-center.jpg"), #0A070B;
         background-size: auto 60vh;
         align-items: center;
     }
@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .vts__cerco__boutique {
-        background: no-repeat 10rem 0 url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background: no-repeat 10rem 0 url("../img/cerco/cerco-gamme-center.jpg"), #0A070B;
         background-size: cover;
     }
 
@@ -43,7 +43,7 @@
 
 @media (min-width: 1200px) {
     .vts__cerco__boutique {
-        background: no-repeat 20rem 0 url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background: no-repeat 20rem 0 url("../img/cerco/cerco-gamme-center.jpg"), #0A070B;
         background-size: cover;
     }
 

@@ -18,14 +18,15 @@ $socials  = get_field('reseaux_sociaux');
                 <?php echo empty($socials['instagram']) ?: '<a target="_blank" href="' . $socials['instagram'] . '"><i class="fab fa-instagram"></i></a>' ?>
             </div>
             <img class="vts__cerco__boutique__cerco-logo"
-                 src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/LogoCerçoHorizontalwhite.svg'; ?>">
+                 src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/LogoCercoHorizontalwhite.svg'; ?>">
         </div>
     </div>
     <div class="vts__cerco">
         <div class="vts__cerco__video__container">
-            <video autoplay muted loop controls class="vts__cerco__video"
-                   poster="<?php echo get_stylesheet_directory_uri() . '/img/cerco/video/poster.jpg'; ?>">
-                <source src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/video/VTS-Cerço-v4-Cartons-HD-171121.mp4'; ?>"
+            <video muted playsinline loop controls class="vts__cerco__video"
+                   poster="<?php echo get_stylesheet_directory_uri() . '/img/cerco/video/poster.jpg'; ?>"
+                   preload="none">
+                <source src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/video/VTS-Cerco-v4-Cartons-HD-171121.mp4'; ?>"
                         type="video/mp4">
             </video>
         </div>
@@ -115,7 +116,7 @@ $socials  = get_field('reseaux_sociaux');
 
                 <!--Etiquette-->
                 <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1"
-                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-réutiliser.svg'; ?>"
+                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-reutiliser.svg'; ?>"
                      data-aos="fade-right"
                      data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__etiquette"
                      data-aos-delay="1600" data-aos-duration="800">
@@ -125,7 +126,7 @@ $socials  = get_field('reseaux_sociaux');
                      data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__etiquette"
                      data-aos-delay="1200" data-aos-duration="800">
                 <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__etiquette3"
-                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-réduire.svg'; ?>"
+                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-reduire.svg'; ?>"
                      data-aos="fade-right"
                      data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__etiquette"
                      data-aos-delay="800" data-aos-duration="800">
@@ -153,7 +154,7 @@ $socials  = get_field('reseaux_sociaux');
 
                 <!--Bouchon-->
                 <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__bouchon"
-                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-réduire.svg'; ?>"
+                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-reduire.svg'; ?>"
                      data-aos="fade-left"
                      data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__bouchon"
                      data-aos-delay="800" data-aos-duration="800">
@@ -173,7 +174,7 @@ $socials  = get_field('reseaux_sociaux');
                      src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-recycler.svg'; ?>"
                      data-aos="fade-right" data-aos-duration="800">
                 <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__carton2"
-                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-réutiliser.svg'; ?>"
+                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-reutiliser.svg'; ?>"
                      data-aos="fade-up" data-aos-duration="800">
                 <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__carton3"
                      src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-composter.svg'; ?>"
