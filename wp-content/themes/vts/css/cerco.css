@@ -8,7 +8,24 @@
     justify-content: center;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
+    .vts__cerco__boutique {
+        background: no-repeat center bottom url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
+        background-size: auto 60vh;
+        align-items: center;
+    }
+
+    .vts__cerco__boutique__content {
+        padding-bottom: 20vh;
+    }
+
+    .vts__cerco__boutique__cerco-logo {
+        position: absolute;
+        top: -200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
     .vts__cerco__boutique {
         background: no-repeat 10rem 0 url("../img/cerco/cerço-gamme-center.jpg"), #0A070B;
         background-size: cover;
@@ -16,6 +33,11 @@
 
     .vts__cerco__boutique__content {
         margin-left: 5rem;
+    }
+
+    .vts__cerco__boutique__cerco-logo {
+        position: absolute;
+        top: -250px;
     }
 }
 
@@ -27,6 +49,11 @@
 
     .vts__cerco__boutique__content {
         margin-left: 15rem;
+    }
+
+    .vts__cerco__boutique__cerco-logo {
+        position: absolute;
+        top: -250px;
     }
 }
 
@@ -44,12 +71,8 @@
     line-height: 2.7rem;
 }
 
-.vts__cerco__boutique__cerco-logo {
-    position: absolute;
-    top: -250px;
-}
 
-.vts__cerco__boutique__socials i {
+.vts__cerco__boutique__socials a i {
     color: #FFFFFF;
     font-size: 2rem;
     margin-right: .5rem;
@@ -63,6 +86,7 @@
     margin-bottom: 100vh;
     z-index: 2;
     position: relative;
+    overflow-x: hidden;
 }
 
 .vts__cerco__video__container {
@@ -277,10 +301,6 @@
 
 
 @media (max-width: 767.98px) {
-    .vts__cerco__section__game-bio-engagee {
-        /*height: 500rem;*/
-    }
-
     .vts__cerco__section__game-bio-engagee__container {
         position: relative;
         width: 100%;
@@ -298,9 +318,9 @@
     .vts__cerco__section__game-bio-engagee__bottle {
         position: absolute;
         top: 330px;
-        height: 550px;
+        height: 700px;
         left: 50%;
-        margin-left: -88px
+        margin-left: -112px;
     }
 
     /* Bottles Desc */
@@ -442,7 +462,18 @@
         border-top: 1px solid white;
         top: 610px;
         right: 229px;
+        transition-property: opacity;
+        transition-duration: .8s;
         transform: rotate(45deg);
+        transition-timing-function: ease;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2__unanimate {
+        opacity: 0;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2__animate {
+        opacity: 1;
     }
 
     /* Bottle icons */
@@ -609,7 +640,18 @@
         border-top: 1px solid white;
         top: 340px;
         right: 555px;
+        transition-property: opacity;
+        transition-duration: .8s;
         transform: rotate(45deg);
+        transition-timing-function: ease;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2__unanimate {
+        opacity: 0;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2__animate {
+        opacity: 1;
     }
 
     /* Bottle icons */
@@ -680,4 +722,47 @@
         color: #505050;
     }
 
+}
+
+
+@media (min-width: 1600px) {
+    .vts__cerco__section__game-bio-engagee__container {
+        width: 1400px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle {
+        left: 584px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__bouteille {
+        left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_desc__etiquette {
+        left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+        left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
+        left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette2 {
+        left: 442px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette3 {
+        left: 519px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__bouteille {
+        left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_line__etiquette {
+        left: 365px;
+    }
 }
