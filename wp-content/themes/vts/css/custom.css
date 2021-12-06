@@ -561,6 +561,8 @@ blockquote {
     background-color: #4a4a4a;
     font-family: "Jaapokki";
     font-size: 1em;
+    position: relative;
+    z-index: 1;
 }
 
 .footer ul {

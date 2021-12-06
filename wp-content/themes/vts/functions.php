@@ -9,14 +9,14 @@
 	    wp_deregister_script('jquery');
 	    wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
 	    //wp_enqueue_script('fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array('jquery') );
-	    wp_enqueue_script('aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', array('jquery') );
+	    wp_enqueue_script('aos', 'https://unpkg.com/aos@next/dist/aos.js', array('jquery') );
 
 	   	wp_enqueue_script( 'chartjs', get_stylesheet_directory_uri() . '/js/Chart.min.js', array('jquery') );
 	   	wp_enqueue_script( 'child-script', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery') );
 
 	   	//wp_enqueue_style( 'fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
 	   	wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
-	   	wp_enqueue_style( 'aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
+	   	wp_enqueue_style( 'aos', 'https://unpkg.com/aos@next/dist/aos.css');
 	    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 	    wp_enqueue_style( 'fonts', get_stylesheet_directory_uri() . '/css/fonts.css');
 
@@ -25,8 +25,7 @@
 
 	    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/css/custom.css', array( $parent_style, 'understrap-styles' ),'v2b');
 	    wp_enqueue_style( 'revelis-style', get_stylesheet_directory_uri() . '/css/revelis.css', array( $parent_style, 'understrap-styles' ), 1.0);
-
-
+	    wp_enqueue_style( 'cerco-style', get_stylesheet_directory_uri() . '/css/cerco.css', array( $parent_style, 'understrap-styles' ), 1.0);
 	}
 
 	// Menu Hamburger

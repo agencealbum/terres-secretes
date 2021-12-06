@@ -9,6 +9,11 @@
          url('../fonts/jaapokki-regular.svg#JaapokkiRegular') format('svg');
 }
 
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
 
 
 /* HELPERS CLASS */
