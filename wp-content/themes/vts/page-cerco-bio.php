@@ -13,9 +13,9 @@ $socials  = get_field('reseaux_sociaux');
         <div class="vts__cerco__boutique__content">
             <p class="vts__cerco__boutique__text"><?php echo get_field('texte_du_footer'); ?></p>
             <div class="vts__cerco__boutique__socials">
-                <?php echo empty($socials['facebook']) ?: '<a target="_blank" href="' . $socials['facebook'] . '"><i class="fab fa-facebook-square"></i></a>'; ?>
-                <?php echo empty($socials['linkedin']) ?: '<a target="_blank" href="' . $socials['linkedin'] . '"><i class="fab fa-linkedin-in"></i></a>' ?>
-                <?php echo empty($socials['instagram']) ?: '<a target="_blank" href="' . $socials['instagram'] . '"><i class="fab fa-instagram"></i></a>' ?>
+                <?php echo empty($socials['facebook']) ? '' : '<a target="_blank" href="' . $socials['facebook'] . '"><i class="fab fa-facebook-square"></i></a>'; ?>
+                <?php echo empty($socials['linkedin']) ? '' : '<a target="_blank" href="' . $socials['linkedin'] . '"><i class="fab fa-linkedin-in"></i></a>' ?>
+                <?php echo empty($socials['instagram']) ? '' : '<a target="_blank" href="' . $socials['instagram'] . '"><i class="fab fa-instagram"></i></a>' ?>
             </div>
             <img class="vts__cerco__boutique__cerco-logo"
                  src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/LogoCercoHorizontalwhite.svg'; ?>">

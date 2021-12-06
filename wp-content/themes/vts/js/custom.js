@@ -151,8 +151,10 @@ function showChart() {
 
 // Cerço
 
-setAnimateBouchonLine2();
-playVideo();
+jQuery(document).ready(function ($) {
+    setAnimateBouchonLine2();
+    playVideo();
+});
 
 function setAnimateBouchonLine2() {
     if (jQuery('.vts__cerco').length) {
@@ -175,9 +177,7 @@ function setAnimateBouchonLine2() {
 }
 
 function playVideo() {
-    jQuery(document).ready(function ($) {
-        if (jQuery('.vts__cerco').length) {
-            $('.vts__cerco__video').get(0).play();
-        }
-    });
+    if (jQuery('.vts__cerco').length) {
+        jQuery('.vts__cerco__video').get(0).play();
+    }
 }

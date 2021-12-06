@@ -458,13 +458,13 @@
 
     .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2 {
         position: absolute;
-        width: 150px;
+        width: 244px;
         border-top: 1px solid white;
-        top: 610px;
-        right: 229px;
+        top: 557px;
+        right: 190px;
         transition-property: opacity;
         transition-duration: .8s;
-        transform: rotate(45deg);
+        transform: rotate(60deg);
         transition-timing-function: ease;
     }
 
@@ -636,13 +636,13 @@
 
     .vts__cerco__section__game-bio-engagee__bottle_line__bouchon2 {
         position: absolute;
-        width: 150px;
+        width: 220px;
         border-top: 1px solid white;
-        top: 340px;
-        right: 555px;
+        top: 298px;
+        right: 522px;
         transition-property: opacity;
         transition-duration: .8s;
-        transform: rotate(45deg);
+        transform: rotate(60deg);
         transition-timing-function: ease;
     }
 
