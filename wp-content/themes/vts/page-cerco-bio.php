@@ -101,8 +101,13 @@ $socials  = get_field('reseaux_sociaux');
                      src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/Bouteilles-Macon-village.png'; ?>">
 
                 <!--Bouteille-->
-                <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__bouteille"
+                <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__bouteille1"
                      src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-recycler.svg'; ?>"
+                     data-aos="fade-right"
+                     data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__bouteille"
+                     data-aos-delay="1600" data-aos-duration="800">
+                <img class="vts__cerco__section__game-bio-engagee__bottle_icon vts__cerco__section__game-bio-engagee__bottle_icon__bouteille2"
+                     src="<?php echo get_stylesheet_directory_uri() . '/img/cerco/5R/5R-reduire.svg'; ?>"
                      data-aos="fade-right"
                      data-aos-anchor=".vts__cerco__section__game-bio-engagee__bottle_desc__bouteille"
                      data-aos-delay="800" data-aos-duration="800">

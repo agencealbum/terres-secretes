@@ -482,9 +482,14 @@
         height: 100px;
     }
 
-    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille1 {
         top: 590px;
         left: 45px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille2 {
+        top: 590px;
+        left: 122px;
     }
 
     .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
@@ -660,9 +665,14 @@
         height: 100px;
     }
 
-    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille1 {
         top: 320px;
         left: 165px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille2 {
+        top: 320px;
+        left: 242px;
     }
 
     .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
@@ -742,8 +752,12 @@
         left: 365px;
     }
 
-    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille {
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille1 {
         left: 365px;
+    }
+
+    .vts__cerco__section__game-bio-engagee__bottle_icon__bouteille2 {
+        left: 442px;
     }
 
     .vts__cerco__section__game-bio-engagee__bottle_icon__etiquette1 {
