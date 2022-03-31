@@ -71,27 +71,46 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<i class="fas fa-user"></i>
 				</a>
 
-				<!-- HAMBURGER MENU -->
-				<div class="dropdown">
-					<div class="hamburger1" for="toggle1" data-toggle="dropdown">
-						<div class="top"></div>
-						<div class="meat"></div>
-						<div class="bottom"></div>
-					</div>
+				 <!-- HAMBURGER MENU -->
+				 <div class="dropdown d-none d-md-block">
+                <div class="hamburger1" for="toggle1" data-toggle="dropdown">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                </div>
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'hamburger-menu',
+                        'container_class' => '',
+                        'container_id' => 'hamburgerMenu',
+                        'menu_class' => 'dropdown-menu dropdown-menu-right text-uppercase mt-3',
+                        'fallback_cb' => '',
+                        'menu_id' => 'hamburger-menu',
+                        'depth' => 2,
+                        'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                ); ?>
+            </div>
 
-					<?php wp_nav_menu(
-						array(
-							'theme_location'  => 'hamburger-menu',
-							'container_class' => '',
-							'container_id'    => 'hamburgerMenu',
-							'menu_class'      => 'dropdown-menu dropdown-menu-right text-uppercase mt-3',
-							'fallback_cb'     => '',
-							'menu_id'         => 'hamburger-menu',
-							'depth'           => 2,
-							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-						)
-					); ?>
-				</div>
+            <div class="dropdown d-block d-md-none">
+                <div class="hamburger1" for="toggle1" data-toggle="dropdown">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                </div>
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'hamburger-menu-mobile',
+                        'container_class' => '',
+                        'container_id' => 'hamburgerMenu',
+                        'menu_class' => 'dropdown-menu dropdown-menu-right text-uppercase mt-3',
+                        'fallback_cb' => '',
+                        'menu_id' => 'hamburger-menu-mobile',
+                        'depth' => 2,
+                        'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                ); ?>
+            </div>
 
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->

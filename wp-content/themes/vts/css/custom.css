@@ -561,6 +561,8 @@ blockquote {
     background-color: #4a4a4a;
     font-family: "Jaapokki";
     font-size: 1em;
+    position: relative;
+    z-index: 1;
 }
 
 .footer ul {
@@ -900,4 +902,8 @@ h3.termstitle {
     border-top: 1px solid;
     border-color: #9B9B9B;
     line-height: 1.8em;
+}
+
+.ico-rs-footer {
+    font-size: 1.4rem;
 }
