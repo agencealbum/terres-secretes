@@ -6,8 +6,8 @@ define( 'WP_ALLOW_REPAIR', false );
 
 # BEGIN SecuPress locations
 define( 'RELOCATE', false );
-define( 'WP_SITEURL', 'http://terressecretes.lndo.site' );
-define( 'WP_HOME', 'http://terressecretes.lndo.site' );
+define( 'WP_SITEURL', 'https://vts.lndo.site' );
+define( 'WP_HOME', 'https://vts.lndo.site' );
 # END SecuPress
 
 

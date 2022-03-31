@@ -35,21 +35,34 @@ jQuery.noConflict();
 
 
         // CAROUSEL NOS VINS
-        $('.carousel .carousel-item').each(function () {
-            var minPerSlide = 3;
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
+        $('.carousel').each(function () {
+            if ($(this).find('.carousel-item').length > 3) {
+                $(this).find('.carousel-item').each(function () {
+                    var minPerSlide = 3;
+                    var next = $(this).next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
 
-            for (var i = 0; i < minPerSlide; i++) {
-                next = next.next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
+                    for (var i = 0; i < minPerSlide; i++) {
+                        next = next.next();
+                        if (!next.length) {
+                            next = $(this).siblings(':first');
+                        }
 
-                next.children(':first-child').clone().appendTo($(this));
+                        next.children(':first-child').clone().appendTo($(this));
+                    }
+                });
+            } else {
+                $(this).find('.carousel-item').each(function () {
+                    var next = $(this).next();
+                    if (!next.length) {
+                        return;
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                });
             }
         });
 
@@ -136,7 +149,7 @@ function showChart() {
         [['pos7'], [1], [2], [3], [4], [5], [6], [11, 19], [0, 50]],
         [['pos8'], [1], [2], [3], [4], [5], [6], [7], [15, 15]]
     ];
-    console.log(nbPoints);
+
     for (var i = 1; i <= nbPoints; i++) {
         posX = TabPos[i][nbPoints][0];
         posY = TabPos[i][nbPoints][1];

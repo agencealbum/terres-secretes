@@ -1,4 +1,4 @@
-name: terressecretes
+name: vts
 recipe: wordpress
 config:
   webroot: .

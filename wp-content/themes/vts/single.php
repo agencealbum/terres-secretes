@@ -1,40 +1,36 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package understrap
- */
+get_header(); ?>
 
-// Exit if accessed directly.
-defined('ABSPATH') || exit;
+<style>
 
-get_header();
-$container = get_theme_mod('understrap_container_type');
-?>
+    article {
+        margin: 0 0 5rem 100px;
+        padding: 0;
+    }
 
-<div id="single-wrapper">
-    <div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
-        <div class="row">
-            <!-- Do the left sidebar check -->
-            <main class="site-main" id="main">
-                <?php while (have_posts()) : the_post(); ?>
-                    <?php get_template_part('loop-templates/content', 'single'); ?>
-                <?php endwhile; ?>
-            </main>
-        </div>
+    article .post-thumbnail img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
 
-        <div class="row mb-lg-5">
-            <div class="col-12">
-                <?php if (ICL_LANGUAGE_CODE == "fr"): ?>
-                    <h3 class="text-center">Vous aimerez aussi</h3>
-                <?php else: ?>
-                    <h3 class="text-center">You may like</h3>
-                <?php endif ?>
-                <?php get_template_part('partials/carrousselVin'); ?>
+</style>
+
+<div class="container pt-5">
+
+    <div class="row">
+
+        <div class="col-md-9 order-md-1 order-2">
+            <?php get_template_part('template-parts/post/content', get_post_format()); ?>
+        </div><!-- col -->
+        <div class="col-md-3 order-md-2 order-1 text-right">
+            <div class="single_post_cross" onclick="history.go(-1)">
+                &times;
             </div>
         </div>
 
-    </div>
-</div>
+    </div><!-- row -->
+
+</div><!-- container -->
 
 <?php get_footer(); ?>

@@ -1,146 +1,67 @@
 <?php
-/**
- * The template for displaying archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package understrap
- */
+get_header(); ?>
 
-// Exit if accessed directly.
-defined('ABSPATH') || exit;
+<style>
 
-$cat_args = array(
-    'taxonomy' => 'vins_categories',
-    'orderby' => 'menu_order',
-    'order' => 'ASC'
-);
+    article {
+        margin: 0 0 5rem 100px;
+        padding: 0;
+    }
 
-$cats = get_categories($cat_args);
+    article .post-thumbnail img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
 
-$container = get_theme_mod('understrap_container_type');
+</style>
 
-get_header();
-?>
-
-
-<div class="container mt-5">
-    <header class="page-header">
-        <figure class="wp-block-image size-large pb-4">
-            <img loading="lazy"
-                 src="<?= wp_get_attachment_url(80); ?>"
-                 alt="" class="wp-image-80"
-                 sizes="(max-width: 180px) 100vw, 180px" width="180"
-                 height="180">
-        </figure>
-    </header>
-
-    <div class="head_search">
-        <div class="logo_head"></div>
-        <div class="searchbar">
-            <div class="search-pop">
-                <span id="ts-cat-search">Rechercher&nbsp;<i class="fas fa-search"></i></span>
-                <div id="search-zone" class="search-zone-widget widget-area" role="complementary">
-                    <span>Rechercher&nbsp;<i class="fas fa-search"></i></span>
-
-                    <div class="search-content-widget">
-                        <div class="tagcloud">
-                            <a href="<?= get_post_type_archive_link('vins'); ?>" style="font-size: 1em;">
-                                <?php if (ICL_LANGUAGE_CODE == "fr"): ?>
-                                    Tous&nbsp;
-                                <?php else: ?>
-                                    All
-                                <?php endif; ?>
-                            </a>
-                            <?php foreach ($cats
-                            as $term) : ?>
-                            <?php if (ICL_LANGUAGE_CODE == "fr"): ?>
-                            <a href="/vins_categories/<?php echo $term->slug; ?>" style="font-size: 1em;">
-                                <?php else: ?>
-                                    <a href="/en/vins_categories/<?php echo $term->slug; ?>" style="font-size: 1em;">
-                                <?php endif; ?>
-                                    <?php echo $term->name; ?>
-                            </a>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
+<section>
+    <div class="container pt-5 my-5">
+        <div class="row text-center mb-3">
+            <div class="col-md-12">
+                <hr>
             </div>
         </div>
     </div>
+</section>
 
-    <?php if (have_posts()) : ?>
-    <div class="container-fluid section-vins aos-init aos-animate" data-aos="fade-up"
-         data-aos-duration="500" data-aos-anchor-placement="center-bottom">
-        <h2><?= single_term_title(); ?></h2>
-        <div class="row border-right-1" style="padding-top: 4rem">
-            <div class="col-md-3">
-                <?= the_archive_description('<div class="mb-5">', '</div>'); ?>
-                <div class="bottom-0">
-                    <?php if (ICL_LANGUAGE_CODE == "fr"): ?>
-                        <a target="_blank" href="https://offres.vignerons-associes.com/sale/6"
-                           class="btn btn-primary">Commander nos vins</a>
-                    <?php endif; ?>
-                </div>
-            </div>
+<div class="container">
 
-            <div class="col-md-9">
-                <div id="recipeCarousel" class="carousel slide w-100"
-                     data-ride="carousel">
-                    <div class="carousel-inner w-100" role="listbox">
-                        <?php /* Start the Loop */ ?>
-                        <?php $counter = 0;
-                        while (have_posts()) : the_post(); ?>
-                            <div class="carousel-item <?= ($counter === 0) ? 'active' : ''; ?> ">
-                                <div class="col-md-4 text-center border-right-2">
-                                    <a class="vin-link" href="<?= get_post_permalink(); ?>">
-                                        <img style="max-height: 40vh; width: auto;"
-                                             src="<?= the_post_thumbnail_url('medium'); ?>">
-                                        <div class="vin-block d-block mt-2 <?php
-                                        switch (get_field('couleur')):
-                                            case "Blanc":
-                                                echo "vin-blanc";
-                                                break;
-                                            case "Rouge":
-                                                echo "vin-rouge";
-                                                break;
-                                            case "Rosé":
-                                                echo "vin-rose";
-                                                break;
-                                            case "Crémant":
-                                                echo "vin-cremant";
-                                                break;
-                                            default:
-                                                echo "";
-                                                break;
-                                        endswitch;
-                                        ?>">
-                                            <div class="vin-appellation"><?= get_field('appellation'); ?></div>
-                                            <div class="vin-title"><?php the_title(); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <?php $counter++ ?>
-                        <?php endwhile; ?>
-                    </div>
-                </div>
-                <div class="float-right">
-                    <a class="carousel-control-next w-auto" href="#recipeCarousel"
-                       role="button" data-slide="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                             class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
+    <div class="row">
 
-<?php get_template_part('partials/promo'); ?>
+        <div class="col-12">
+
+            <?php
+            if(have_posts()) :
+
+                /* Start the Loop */
+                while(have_posts()) : the_post();
+
+                    /*
+                     * Include the Post-Format-specific template for the content.
+                     * If you want to override this in a child theme, then include a file
+                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                     */
+                    get_template_part('template-parts/post/content', get_post_format());
+
+                endwhile;
+
+                the_posts_pagination(
+                    array(
+                        'prev_text' => '<span class="screen-reader-text">' . __('Previous page', 'twentyseventeen') . '</span>',
+                        'next_text' => '<span class="screen-reader-text">' . __('Next page', 'twentyseventeen') . '</span>',
+                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'twentyseventeen') . ' </span>',
+                    )
+                );
+            else :
+                get_template_part('template-parts/post/content', 'none');
+            endif;
+            ?>
+
+        </div><!-- col -->
+    </div><!-- row -->
+
+</div><!-- container -->
 
 <?php get_footer(); ?>
