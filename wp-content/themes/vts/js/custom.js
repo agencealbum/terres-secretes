@@ -36,7 +36,8 @@ jQuery.noConflict();
 
         // CAROUSEL NOS VINS
         $('.carousel').each(function () {
-            if ($(this).find('.carousel-item').length > 3) {
+            let itemsNumbers = $(this).find('.carousel-item').length;
+            if (itemsNumbers > 3) {
                 $(this).find('.carousel-item').each(function () {
                     var minPerSlide = 3;
                     var next = $(this).next();
@@ -57,11 +58,21 @@ jQuery.noConflict();
             } else {
                 $(this).find('.carousel-item').each(function () {
                     var next = $(this).next();
+
                     if (!next.length) {
                         return;
                     }
 
                     next.children(':first-child').clone().appendTo($(this));
+
+                    for (var i = 1; i < itemsNumbers - 1; i++) {
+                        next = next.next();
+                        if (!next.length) {
+                            next = $(this).siblings(':first');
+                        }
+
+                        next.children(':first-child').clone().appendTo($(this));
+                    }
                 });
             }
         });

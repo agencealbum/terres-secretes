@@ -50,8 +50,8 @@ $categories = get_categories(array(
 
     <div class="row">
 
-        <div class="col-12">
-            <!--<p>Actualités.php</p>-->
+        <div class="col-md-2 d-none d-md-block"></div>
+        <div class="col-md-8">            <!--<p>Actualités.php</p>-->
 
             <?php
             if(have_posts()) :
@@ -81,6 +81,7 @@ $categories = get_categories(array(
             ?>
 
         </div><!-- col -->
+        <div class="col-md-2 d-none d-md-block"></div>
 
     </div><!-- row -->
 

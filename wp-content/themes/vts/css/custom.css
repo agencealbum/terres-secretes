@@ -946,8 +946,7 @@ article .entry-header .entry-title {
 
 article a {
     color: var(--main-color) !important;
-    text-transform: uppercase;
-    text-decoration: none !important;
+    text-decoration: underline;
     transition: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -974,7 +973,6 @@ article .entry-header .entry-meta {
 }
 
 article .entry-header .entry-title {
-    text-decoration: none;
     text-transform: none !important;
     margin-left: 20px;
     vertical-align: bottom;
@@ -983,8 +981,8 @@ article .entry-header .entry-title {
     font-weight: 400;
 }
 
-article .entry-header .entry-title a {
-    text-transform: none !important;
+article .entry-header a {
+    text-decoration: none !important;
 }
 
 article .entry-header .edit-link {
@@ -1023,6 +1021,10 @@ article a.more-link {
 
 article a.more-link:before {
     margin: 0 !important;
+}
+
+article ul li {
+    list-style: disc;
 }
 
 /* //////////////// Image catégorie article
