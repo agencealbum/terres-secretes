@@ -3,10 +3,18 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+$excludedVinsCategoriesName = ['exceptionnels'];
+$excludedVinsCategoriesIDs = array();
+
+foreach($excludedVinsCategoriesName as $oneExcludedVinsCategoriesName) {
+    $excludedVinsCategoriesIDs = get_term_by('slug', 'exceptionnels', 'vins_categories')->term_id;
+}
+
 $cat_args = array(
     'taxonomy' => 'vins_categories',
     'orderby' => 'menu_order',
-    'order' => 'ASC'
+    'order' => 'ASC',
+    'exclude' => $excludedVinsCategoriesIDs,
 );
 
 $cats = get_categories($cat_args);

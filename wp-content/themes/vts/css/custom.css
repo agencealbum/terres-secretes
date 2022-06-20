@@ -668,7 +668,7 @@ blockquote {
     border: 1px solid #979797;
 }
 
-ul, li {
+.navbar ul, .navbar li {
     list-style: none;
 }
 

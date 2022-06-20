@@ -128,6 +128,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<li class="menu-item">
 					<a href="/mentions-legales/">Mentions légales</a>
 					</li>
+                    <li class="menu-item">
+					<a href="/politique-de-protection-des-donnees/">Politique de protection des données</a>
+					</li>
 				</ul>
 				
 			</div>
