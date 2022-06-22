@@ -27,10 +27,9 @@ $isExceptionnel = has_term('exceptionnels', 'vins_categories');
             <img loading="lazy"
                  src="<?php echo $sourceLogo; ?>"
                  alt="" class="wp-image-80"
-                 sizes="(max-width: 180px) 100vw, 188px" width="180"
-                 height="180">
+                 style="max-height: 180px; width: auto;">
         </figure>
-        <h1 class="fiche-vin-title text-left"><?= get_field('appellation'); ?>&nbsp;<?php the_title(); ?></h1>
+        <h1 class="fiche-vin-title text-left"><?= get_field('appellation'); ?><br><?php the_title(); ?></h1>
         <table class="table">
             <?php if(!empty(get_field('appellation'))): ?>
                 <tr>
@@ -77,13 +76,12 @@ $isExceptionnel = has_term('exceptionnels', 'vins_categories');
             <?php endif; ?>
         </div>
         <?php if(!$isExceptionnel): ?>
-        <div class="align-items-center pb-5">
-            <?php if(ICL_LANGUAGE_CODE == "fr"): ?>
-                <a target="_blank" class="btn btn-primary" href="https://offres.vignerons-associes.com/sale/6">Commander
-                    ce vin</a>
-            <?php endif;
-            endif; ?>
-
-        </div>
+            <div class="align-items-center pb-5">
+                <?php if(ICL_LANGUAGE_CODE == "fr"): ?>
+                    <a target="_blank" class="btn btn-primary" href="https://offres.vignerons-associes.com/sale/6">Commander
+                        ce vin</a>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
