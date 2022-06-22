@@ -51,7 +51,7 @@ $container = get_theme_mod('understrap_container_type');
             </main>
         </div>
 
-        <div class="row mb-lg-5">
+        <div class="row mb-5">
             <div class="col-12">
                 <?php if(!$isExceptionnel && $vins->found_posts > 0): ?>
                     <?php if(ICL_LANGUAGE_CODE == "fr"): ?>

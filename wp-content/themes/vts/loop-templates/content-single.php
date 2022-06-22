@@ -14,12 +14,15 @@ $isExceptionnel = has_term('exceptionnels', 'vins_categories');
     <a class="btn-back" href="<?= get_post_type_archive_link('vins') ?>">X</a>
 <?php endif; ?>
 <div class="row pt-5 pb-5">
-    <div class="col-6">
-        <div class="sticky-top" style="top: 9rem;">
+    <div class="col-md-6 col-12 mb-5 mb-md-0">
+        <div class="sticky-top d-none d-md-block" style="top: 9rem;">
             <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
         </div>
+        <div class="d-block d-md-none text-center" style="top: 9rem;">
+            <?php echo get_the_post_thumbnail($post->ID, 'medium'); ?>
+        </div>
     </div>
-    <div class="col-6">
+    <div class="col-md-6 col-12 px-5">
         <figure class="wp-block-image size-large pb-4">
             <?php
             $sourceLogo = $isExceptionnel && get_field('logo') ? get_field('logo') : wp_get_attachment_url(80);
