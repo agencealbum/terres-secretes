@@ -37,7 +37,7 @@ get_header();
                                  data-aos-anchor-placement="top-bottom" data-aos-delay="300">
 
                             <div class="row">
-                                <div class="col-5 <?= (get_row_index() % 2 == 1) ? 'order-md-first' : 'order-md-last offset-1'; ?>">
+                                <div class="col-lg-5 <?= (get_row_index() % 2 == 1) ? 'order-lg-first' : 'order-lg-last offset-lg-1'; ?>">
                                     <div class="section_title">
                                         <h2><?= $row['titre']; ?></h2>
                                         <span class="oenoDate"></span>
@@ -49,7 +49,7 @@ get_header();
                                         </a>
                                     <?php endif; ?>
                                 </div>
-                                <div class="col-6 <?= (get_row_index() % 2 == 1) ? 'order-md-last offset-1 pl-0' : 'order-md-first pr-0'; ?>">
+                                <div class="col-lg-6 <?= (get_row_index() % 2 == 1) ? 'order-first order-lg-last offset-lg-1 pl-lg-0' : 'order-first order-lg-first pr-lg-0'; ?>">
                                     <img src="<?= $row['image_1']['url'] ?>"/>
                                 </div>
                             </div>

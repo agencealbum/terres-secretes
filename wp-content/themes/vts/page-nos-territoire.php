@@ -31,10 +31,10 @@ get_header();
                 <!-- intro -->
                 <div class="wrap" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <?= the_content(); ?>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <?php get_template_part('partials/image'); ?>
                         </div>
                     </div>

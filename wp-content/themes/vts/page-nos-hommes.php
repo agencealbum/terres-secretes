@@ -30,13 +30,13 @@ get_header();
                 <!-- intro -->
                 <div class="wrap" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="section_title">
                                 <h2><?= get_field('sous-titres'); ?></h2>
                             </div>
                             <?= the_content(); ?>
                         </div>
-                        <div class="col-8 pl-5">
+                        <div class="col-lg-8 pl-lg-5">
                             <?php get_template_part('partials/image-with-caption'); ?>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ get_header();
             </div>
     </div>
     <div id="bannerNosHommes" class="container-fluid">
-        <div class="row w-100 p-0">
+        <div class="row w-100 p-0 m-0">
             <div class="col p-0">
                 <img class="w-100" src="<?= get_the_post_thumbnail_url(77); ?>"/>
                 <div class="image-caption">><?= get_post(get_post_thumbnail_id(77))->post_title; ?><br/>
