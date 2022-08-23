@@ -64,9 +64,9 @@ if($vins->found_posts > 0):
     </div>
 </div>
 <?php endif; ?>
-<div class="row" id="nos-vins-link">
-    <div class="col-md-4 offset-md-4 justify-content-between align-items-center">
-        <a class="border-background btn btn-primary" style="margin-left: 3.2rem"
+<div id="nos-vins-link">
+    <div>
+        <a class="border-background btn btn-primary"
            href='<?php echo get_post_type_archive_link('vins'); ?>'>
             <?php if(ICL_LANGUAGE_CODE == "fr"): ?>
                 Voir tous nos vins
