@@ -930,13 +930,18 @@ h3.termstitle {
     cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+    #search-zone {
+        right: -4em;
+    }
+}
+
 #search-zone {
     overflow: hidden;
     position: absolute;
     background-color: #000;
     top: -15px;
     padding-top: 1em;
-    right: -4em;
     z-index: 99;
     opacity: 0;
     padding-left: 1rem;
